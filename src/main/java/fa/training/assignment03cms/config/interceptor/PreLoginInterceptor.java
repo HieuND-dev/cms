@@ -12,7 +12,6 @@ public class PreLoginInterceptor implements HandlerInterceptor {
             throws Exception {
         Object member = request.getSession().getAttribute("member");
         if (member == null) {
-            // Redirect to login page if member attribute not found in session
             response.sendRedirect("/login");
             return false;
         }

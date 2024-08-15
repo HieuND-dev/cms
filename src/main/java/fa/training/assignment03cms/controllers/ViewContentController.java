@@ -4,7 +4,6 @@ import fa.training.assignment03cms.entities.Content;
 import fa.training.assignment03cms.service.ContentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
-import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,8 +20,6 @@ public class ViewContentController {
     @GetMapping
     private String viewContent(Model model, @RequestParam(value = "keyword", required = false) String keyword,
                                @RequestParam(name = "page", defaultValue = "1") Integer pageNumber) {
-
-
 
         Page<Content> page;
         if(keyword != null) {
