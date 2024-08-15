@@ -14,7 +14,6 @@ public class ExceptionHandle {
             return "/exception/404";
         }
 
-//    SpelEvaluationException.class
 
         @ExceptionHandler({Exception.class})
         public String handleException(Exception e) {

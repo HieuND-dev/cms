@@ -1,7 +1,5 @@
 package fa.training.assignment03cms.service;
 
-
-
 import fa.training.assignment03cms.entities.Content;
 import org.springframework.data.domain.Page;
 
